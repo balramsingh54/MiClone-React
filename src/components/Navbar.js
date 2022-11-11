@@ -12,13 +12,13 @@ const NavBar = () => {
                 </Link>
             </div>
                 <Link className='navlinks' to='/miphones'>Mi Phones</Link>
-                <Link className='navlinks' to='/miphones'>Redmi Phones</Link>
-                <Link className='navlinks' to='/miphones'>Tv</Link>
-                <Link className='navlinks' to='/miphones'>Laptops</Link>
-                <Link className='navlinks' to='/miphones'>Fitness & Lifestyles</Link>
-                <Link className='navlinks' to='/miphones'>Home</Link>
-                <Link className='navlinks' to='/miphones'>Radio</Link>
-                <Link className='navlinks' to='/miphones'>Accessories</Link>
+                <Link className='navlinks' to='/redmi'>Redmi Phones</Link>
+                <Link className='navlinks' to='/tv'>Tv</Link>
+                <Link className='navlinks' to='/laptop'>Laptops</Link>
+                <Link className='navlinks' to='/fit&life'>Fitness & Lifestyles</Link>
+                <Link className='navlinks' to='/home'>Home</Link>
+                <Link className='navlinks' to='/radio'>Radio</Link>
+                <Link className='navlinks' to='/accessories'>Accessories</Link>
                 <div className="searchbox">
                     <input id='search-products' type="text" name='search' placeholder='Search Products' />
                 </div>
