@@ -11,8 +11,8 @@ const Offers = () => {
 
   return (
     <div className='offer-section'>
-      {myoffer.map((item) => {
-        return <div className="image-offer">
+      {myoffer.map((item, i) => {
+        return <div key ={i} className="image-offer">
           <img src={item.image} alt="balram" />
         </div>
       })

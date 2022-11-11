@@ -13,9 +13,9 @@ const Slider = () => {
     // start.merastart.length ? 
       <Carousel>
 
-        {start.map((item) => (
+        {start.map((item, i) => (
 
-          <CarouselItem>
+          <CarouselItem key ={i}>
 
             <img src={item} alt="" className="d-block w-100" />
 
