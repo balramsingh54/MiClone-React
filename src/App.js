@@ -1,7 +1,7 @@
 import './App.css';
 import PreNavbar from './components/PreNavbar';
 import NavBar from './components/Navbar';
-import { BrowserRouter as Router,Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Slider from './components/Slider';
 import Offers from './components/Offers';
 import Headings from './components/Headings';
@@ -26,11 +26,11 @@ function App() {
       <HotAccessoriesMenu />
 
       <Routes>
-        <Route path='music' element={<HotAccessories data ={"balram1"} />}></Route>
-        <Route path='smartDevices' element={<HotAccessories data ={"balram2"} />}></Route>
-        <Route path='home' element={<HotAccessories data ={"balram3"} />}></Route>
-        <Route path='lifestyle' element={<HotAccessories data ={"balram4"} />}></Route>
-        <Route path='mobileaccessories' element={<HotAccessories data ={"balram5"} />}></Route>
+        <Route path='music' element={<HotAccessories music={value.hotAccessoriesCover.music} cover={value.hotAccessories.music[0].image} />}></Route>
+        <Route path='smartDevices' element={<HotAccessories data1={value.hotAccessoriesCover.smartDevice} />}></Route>
+        <Route path='home' element={<HotAccessories data1={value.hotAccessoriesCover.home} />}></Route>
+        <Route path='lifestyle' element={<HotAccessories data1={value.hotAccessoriesCover.lifeStyle} />}></Route>
+        <Route path='mobileaccessories' element={<HotAccessories data1={value.hotAccessoriesCover.mobileAccessories} />}></Route>
       </Routes>
 
       <Headings text="PRODUCT REVIEWS" />
